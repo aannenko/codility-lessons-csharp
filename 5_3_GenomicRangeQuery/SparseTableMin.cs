@@ -17,7 +17,6 @@ namespace GenomicRangeQuery
             // Fill _table
             int bytes = Buffer.ByteLength(numbers);
             Buffer.BlockCopy(numbers, 0, _table, 0, bytes);
-
             for (int i = 1; i < levels; i++)
                 for (int j = 0; j + (1 << i) <= length; j++)
                     _table[i, j] = Math.Min(_table[i - 1, j], _table[i - 1, j + (1 << (i - 1))]);
@@ -47,7 +46,7 @@ namespace GenomicRangeQuery
         }
     }
 
-    // Optimized
+    // Optimized, incompatible with Codility
     internal sealed class SparseTableMin<T> where T : INumber<T>
     {
         private readonly T[,] _table;
