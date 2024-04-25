@@ -1,2 +1,2 @@
 # codility-lessons-csharp
-Highly efficient C# answers to the lessons on Codility
+Highly efficient 100/100 C# answers to the lessons on Codility
