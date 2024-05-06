@@ -1,6 +1,6 @@
 ﻿// https://app.codility.com/demo/results/trainingNGDV6T-BWV/
 
-Console.WriteLine(GetNumberOfWallBlocks([8, 8, 5, 7, 9, 8, 7, 4, 8]));
+Console.WriteLine(GetNumberOfWallBlocks([8, 8, 5, 7, 9, 8, 7, 4, 8])); // 7
 
 // Cover "Manhattan skyline" using the minimum number of rectangles.
 // Each number in the array H is a portion of a wall
