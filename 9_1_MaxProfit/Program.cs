@@ -1,4 +1,4 @@
-﻿// https://app.codility.com/demo/results/training54YBXJ-NWX/
+﻿// https://app.codility.com/demo/results/trainingZ7M2N3-YX9/
 
 Console.WriteLine(GetMaxProfit([23171, 21011, 21123, 21366, 21013, 21367])); // 356
 
@@ -10,13 +10,9 @@ static int GetMaxProfit(int[] A)
     var best = 0;
     for (int i = 1; i < A.Length; i++)
     {
-        streak += A[i] - A[i - 1];
-        if (streak < 0)
-            streak = 0;
-
-        if (best < streak)
-            best = streak;
+        streak = Math.Max(0, streak + A[i] - A[i - 1]);
+        best = Math.Max(best, streak);
     }
 
-    return best > 0 ? best : 0;
+    return best;
 }
