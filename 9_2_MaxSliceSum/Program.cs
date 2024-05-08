@@ -2,6 +2,7 @@
 
 Console.WriteLine(GetMaxSliceSum([3, 2, -6, 4, 0])); // 5
 
+// Find a slice with max sum of items in array A and return the sum.
 static int GetMaxSliceSum(int[] A)
 {
     var streak = A[0];
